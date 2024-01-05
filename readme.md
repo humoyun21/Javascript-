@@ -60,3 +60,13 @@ JavaScript o'zgaruvchilari katta-kichik harflarga sezgir, shuning uchun "myVaria
 Esda tutingki, “firstName”, “yosh” yoki “isLoggedin” kabi maqsadlarini tavsiflovchi mazmunli oʻzgaruvchilar nomlarini tanlash yaxshi amaliyotdir.
 
 Umid qilamanki, JavaScript o'zgaruvchilari haqidagi ushbu kirish sizga boshlashingizga yordam beradi! Agar sizda qo'shimcha savollar bo'lsa yoki qo'shimcha yordam kerak bo'lsa, bemalol so'rang. Baxtli kodlash!
+JavaScript-da siz +, -, * va / kabi oddiy matematik operatorlardan foydalangan holda raqamlar ustida qo'shish, ayirish, ko'paytirish va bo'lish kabi turli xil amallarni bajarishingiz mumkin. Misol uchun, agar siz ikkita raqamni qo'shmoqchi bo'lsangiz, quyidagi koddan foydalanishingiz mumkin:
+
+```javascript
+soni 1 = 5 bo'lsin;
+soni 2 = 10 bo'lsin;
+yig'indisi = son1 + son2;
+console.log(sum); // Chiqish: 15
+```
+
+JavaScript shuningdek, “Math.sqrt()” funksiyasi yordamida raqamning kvadrat ildizini topish yoki “Math.pow()” funksiyasi yordamida raqamni bir darajaga ko‘tarish kabi murakkabroq matematik operatsiyalarni ham qo‘llab-quvvatlaydi.
