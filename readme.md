@@ -185,3 +185,20 @@ while (i <= 100) {
 
 console.log(sum); // 5050
 Bu dasturda sum o'zgaruvchisiga 1 dan 100 gacha bo'lgan butun sonlar yig'indisini hisoblaydi va natijani konsolga chiqaradi. Natija 5050 bo'ladi. while operatori foydalanuvchiga qo'shimcha shartlarga asosan takrorlarni bajarish imkonini beradi.
+
+//////Function ///////////////////
+
+
+
+JavaScriptda "function" atamasi yordamida kodni ifodalashning "mavzusi" yozish mumkin. "function" atamasida funksiyani tashkil etadigan JavaScript kodini yozamiz. Biz funksiyani biror amalni bajarish uchun yoki boshqa kodni qayta-qayta ishlatish uchun yozamiz.
+
+Misol uchun, quyidagi JavaScript kodida "mavzu" nomli bir funksiya yozilgan:
+
+function mavzu() {
+    console.log("Bu funksiya mavzusi!");
+}
+Bu funksiya to'g'ridan-to'g'ri konsolga "Bu funksiya mavzusi!" matnini chop etadi.
+
+Funksiyani chaqirish uchun esa funksiya nomini yozib, "()" belgilarini qo'shib, keyincha funksiya chaqirishla xarakterlanadi:
+
+mavzu(); // "Bu funksiya mavzusi!" ni konsolga chop etadi
