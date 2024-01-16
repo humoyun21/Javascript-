@@ -130,7 +130,8 @@ if (number > 0){
 */  
 
 //20
+/*
 let a = +prompt("please enter your was born ");
 if( a=2024-a){
     console.log(" ${} sizning yoshingiz" )
-}
+}*/
