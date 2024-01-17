@@ -202,3 +202,42 @@ Bu funksiya to'g'ridan-to'g'ri konsolga "Bu funksiya mavzusi!" matnini chop etad
 Funksiyani chaqirish uchun esa funksiya nomini yozib, "()" belgilarini qo'shib, keyincha funksiya chaqirishla xarakterlanadi:
 
 mavzu(); // "Bu funksiya mavzusi!" ni konsolga chop etadi
+
+
+///// Takrorlash //////
+
+if: if operatori, belgilangan shartning qanoatlantirilishi bilan bir yoki bir nechta ko'dalarni bajarishni ta'minlaydi. Agar berilgan shart to'g'ri bo'lsa, shartni qanoatlantiruvchi ko'dlar ijro etiladi; aks holda, ko'dlar o'tkazilmaydi. if operatori eng ko'p ishlatiladigan shart operatoridir va dasturlashning asosiy qismiga kiradi. Misol uchun:
+
+let x = 10;
+
+if (x > 5) {
+  console.log("x 5 dan katta");
+} else {
+  console.log("x 5 dan kichik yoki teng");
+}
+loop: Dasturlarning to'rt araliq tsikllarini bajarish imkonini beradi. Araliq tsikllari, biror shartning qanoatlantirilishidan bog'liq ravishda ko'dlar to'plamini takrorlashga imkon beradi. for va while tsikllari eng ko'p o'rganiladigan tsikllardir.
+
+// for tsikli
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+// while tsikli
+let x = 0;
+while (x < 5) {
+  console.log(x);
+  x++;
+}
+funksiya: JavaScriptda funksiya, biror amallarni bajaruvchi rejalarni ifodalash uchun yaratilgan oddiy rejalardir. Funksiyalar qaytaradigan natijalarni taqdim etish, biror parametrlarni qabul qilish, yangi qiymatlar yaratish, ko'dni qayta ishlatish va ko'p qo'shimcha imkoniyatlarga ega bo'lishlari mumkin. Bunda, funksiya yangi obyekt qaytarish, console.da ma'lumotlar chiqarish, matritsatni ustunlarini yig'ish kabi ko'p ishlar bajarishi mumkin. Misol uchun:
+
+function add(a, b) {
+  return a + b;
+}
+
+console.log(add(5, 3)); // 8
+
+function greet(name) {
+  console.log(`Assalomu alaykum, ${name}!`);
+}
+
+greet("Diyor"); // Assalomu alaykum, Diyor!

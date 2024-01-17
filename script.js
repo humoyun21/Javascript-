@@ -135,3 +135,11 @@ let a = +prompt("please enter your was born ");
 if( a=2024-a){
     console.log(" ${} sizning yoshingiz" )
 }*/
+
+
+let a = +prompt("Please enter b ");
+let b = +prompt("Please enter c ");
+for (let i = a; i <= b; i++) {
+  console.log(i)
+  
+}
