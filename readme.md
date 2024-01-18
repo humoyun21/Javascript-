@@ -241,3 +241,35 @@ function greet(name) {
 }
 
 greet("Diyor"); // Assalomu alaykum, Diyor!
+
+
+
+
+JavaScript-da funksiya, bir qator kodni bitta nom bilan to'plagan qismidir. Funksiya nomidan keyin, tugunlarni () orqali ajratilgan parametrlarni olish uchun argumentlar kiritilishi mumkin. Funksiya ichidagi kod qatorlari {} yordamida ajratiladi.
+
+JavaScript-dagi funksiya turining eng asosiy ikki turi mavjud:
+
+Tavsifi yo'q funksiya (Секцияona): Bu turdagi funksiyalar parametr qabul qilmasa ham, boshqacha bitta amalni bajaradi va biron bir qiymat qaytarmaydi. Odatda, bu tur funksiyalar void funksiyalari deb ham ataladi. Quyidagi misol tavsifi yo'q funksiyaning bir misoli:
+
+function greetings() {
+  console.log("Salom!");
+}
+
+greetings(); // "Salom!" chiqadi
+Qiymat qaytaruvchi funksiya: Bu turdagi funksiyalar, biror amalni bajarib, uni qaytamay va uni boshqa o'zgaruvchiga o'zlashtirish uchun qiymat qaytaradigan funksiyalardir. Bu amal qaytayotgan qiymat, return operatori orqali belgilanadi. Quyidagi misol qiymat qaytaruvchi funksiyaning bir misoli:
+
+function sum(a, b) {
+  return a + b;
+}
+
+let result = sum(3, 4); 
+console.log(result); // 7 chiqadi
+JavaScript-da funksiyalarga nom berish zarur emas. Uni o'zgaruvchiga tenglashtirish orqali saqlashingiz ham mumkin:
+
+let square = function(x) {
+  return x * x;
+};
+
+let result = square(5);
+console.log(result); // 25 chiqadi
+JavaScript-da funksiyalarni boshqa funksiyalar ichida yaratish, funksiya nomini olib kelish, tushunmas (callback) sifatida uzatish va boshqa ko'plab asosiy amallarni bajarish uchun qo'llanishidagi ko'plab imkoniyatlardan faqat ayriy maqsadlari uchun foydalanish mumkin.
