@@ -136,10 +136,35 @@ if( a=2024-a){
     console.log(" ${} sizning yoshingiz" )
 }*/
 
-
+/*
 let a = +prompt("Please enter b ");
 let b = +prompt("Please enter c ");
 for (let i = a; i <= b; i++) {
   console.log(i)
   
 }
+*/
+
+///////////////////      array  /////////////////
+/*
+Javascript tilida, massivlar (arraylar) bir nechta elementlarni o'z ichiga olgan o'zgaruvchi sifatida ishlatiladigan obyektlar hisoblanadi. Massivlar bir nechta elementlarni bir qator musteriga joylashtiradi va har bir element o'zining indekssiga ega bo'ladi. Indekslar 0 dan boshlanadi.
+
+Massivlar elementlarni qo'shish, o'chirish, o'zgartirish va massivning uzunligini aniqlash imkonini beradi.
+
+Massivning sarlavhalanishi quyidagicha bo'i:
+
+var myArray = [element1, element2, ... elementN];
+
+element1, element2, ... elementN JavaScript tilida matnlar, sonlar, boolean sifatidagi ma'lumotlar yoki boshqa obyektlar bo'lishi mumkin.
+
+Massivdagi har bir elementning o'zining indeksi, massivning sarlavhasi orqali yoki massiv ustida quyidagicha sintaksis orqali olingadi:
+
+var value = myArray[index];
+
+Massiv diagonal elementlari bilan ham ishlash imkonini beradi:
+
+var diagonalElem = myArray[i][j];
+
+JavaScript massivlari ko'plab metodlarga ega, masalan: push(), pop(), shift(), unshift(), splice() va hokazo. Bu metodlar orqali massiv elementlari ustida arifmetik, qadriy, tartibiy, qidiruv amallarini bajarish imkoniyati mavjud.
+
+JavaScript massivlari hajmi o'zgartirib, kamaytirib, tarkibini o'zgartirish va boshqa arrayni nusxalash imkonini beradi.*/
