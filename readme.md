@@ -273,3 +273,43 @@ let square = function(x) {
 let result = square(5);
 console.log(result); // 25 chiqadi
 JavaScript-da funksiyalarni boshqa funksiyalar ichida yaratish, funksiya nomini olib kelish, tushunmas (callback) sifatida uzatish va boshqa ko'plab asosiy amallarni bajarish uchun qo'llanishidagi ko'plab imkoniyatlardan faqat ayriy maqsadlari uchun foydalanish mumkin.
+
+
+Javascript tilida, arraylar elementlarni bir joyga joylashtirilgan ma'lumotlar to'plami sifatida ishlatiladi. Arraylarni aniqlash uchun [] qavs ichida elementlarni ifodalash kerak. Har bir element vergul bilan ajratiladi.
+
+Masalan:
+
+css
+Copy code
+var cars = ["BMW", "Toyota", "Honda", "Mercedes"];
+Bu yerda cars nomli arrayda 4 ta element mavjud: "BMW", "Toyota", "Honda" va "Mercedes".
+
+Array elementlari indekslar orqali chaqiriladi. Indekslar noldan boshlanadi. Ya'ni, birinchi elementni chaqirish uchun indeks 0, ikkinchi elementni chaqirish uchun indeks 1 va hokazo.
+
+javascript
+Copy code
+console.log(cars[0]); // "BMW"
+console.log(cars[2]); // "Honda"
+Arraydagi elementlar ustida amallar bajarish uchun ko'p mashhur metodlar mavjud. Ba'zilari quyidagilardir:
+
+length: Arraydagi elementlar sonini qaytaradi.
+push(): Elementni arrayning oxiriga qo'shadi.
+pop(): Arrayning oxiridagi elementni olib tashlaydi.
+shift(): Arrayning boshidagi elementni olib tashlaydi.
+unshift(): Elementni arrayning boshiga qo'shadi.
+lua
+Copy code
+console.log(cars.length); // 4
+
+cars.push("Audi");
+console.log(cars); // ["BMW", "Toyota", "Honda", "Mercedes", "Audi"]
+
+cars.pop();
+console.log(cars); // ["BMW", "Toyota", "Honda", "Mercedes"]
+
+cars.shift();
+console.log(cars); // ["Toyota", "Honda", "Mercedes"]
+
+cars.unshift("Ford");
+console.log(cars); // ["Ford", "Toyota", "Honda", "Mercedes"]
+Shuningdek, array elementlari ustida turli amallar bajarish mumkin: elementlar bir-biriga qo'shish, kesishish, o'chirish va boshqa operatsiyalar uchun ko'rinishlar mavjud.

@@ -127,7 +127,7 @@ if (number > 0){
 } else {
    console.log("Raqam nolga teng");
 }
-*/  
+*/
 
 //20
 /*
@@ -168,3 +168,31 @@ var diagonalElem = myArray[i][j];
 JavaScript massivlari ko'plab metodlarga ega, masalan: push(), pop(), shift(), unshift(), splice() va hokazo. Bu metodlar orqali massiv elementlari ustida arifmetik, qadriy, tartibiy, qidiruv amallarini bajarish imkoniyati mavjud.
 
 JavaScript massivlari hajmi o'zgartirib, kamaytirib, tarkibini o'zgartirish va boshqa arrayni nusxalash imkonini beradi.*/
+
+/*function arrayNum(n) {
+  let arr = [];
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 == 0 && i % 5 == 0) {
+      arr.push(i);
+    }
+  }
+  return arr;
+}
+let n = 100;
+let result = arrayNum(n);
+console.log(result);
+
+*/
+
+function arrayNum(n) {
+  let summa = 0;
+  for (let i = 1; i <= n.length; i = i + 10) {
+    if (i % 2 == 1) {
+      summa += n[i];
+    }
+  }
+  return summa;
+}
+let n = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+let result = arrayNum(n);
+console.log(result);
