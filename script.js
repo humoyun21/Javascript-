@@ -183,7 +183,7 @@ let result = arrayNum(n);
 console.log(result);
 
 */
-
+/*
 function arrayNum(n) {
   let summa = 0;
   for (let i = 1; i <= n.length; i = i + 10) {
@@ -196,3 +196,83 @@ function arrayNum(n) {
 let n = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 let result = arrayNum(n);
 console.log(result);
+*/
+
+/*
+const laptop = {
+  name: "Lenevo",
+  yerar: 2018,
+  color: "black",
+  ram: 4,
+  processor: "Intel Cloren N400 1.10GHz 1.10 GHz",
+  type: "64 bit",
+  lenguage: "english",
+  system: "windows 10 pro",
+  pen: "no pen",
+  touch: "no touch",
+  apps: "VScode",
+  ssd: 512,
+  aboutsytstem: function () {
+    console.log("Windows 10 pro Intel Cloren N400 1.10GHz 1.10 GHz 64 bit");
+  },
+
+};
+console.log(laptop);
+laptop.aboutsytstem();
+*/
+/*
+const calc = {
+  add: function (a, b) {
+    return a + b;
+  },
+  multipilication: function (a, b) {
+    return a * b;
+  },
+  disrupt: function (a, b) {
+    return a / b;
+  },
+  divorce: function (a, b) {
+    return a - b;
+  },
+};
+const result = calc.add(100, 20);
+const result1 = calc.multipilication(100, 20);
+const result2 = calc.disrupt(100, 20);
+const result3 = calc.divorce(100, 20);
+
+console.log(result);
+console.log(result1);
+console.log(result2);
+console.log(result3);
+*/
+const car = {
+  name: "Ferrari",
+  year: 2018,
+  color: "Red",
+  speed: 650,
+  maxspeed: 700,
+  zap: 1140,
+  produced: "USA",
+  accelerartion: 1.3,
+
+  getname: function () {
+    console.log(this.name + "  " + this.produced + "  " + this.color);
+  },
+  getenergy: function () {
+    console.log(
+      "tezligi" +
+        " " +
+        this.speed +
+        "km " +
+        "  " +
+        this.maxspeed +
+        "  " +
+        this.accelerartion +
+        "  " +
+        this.year
+    );
+  },
+};
+console.log(car);
+car.getname();
+car.getenergy();

@@ -313,3 +313,48 @@ console.log(cars); // ["Toyota", "Honda", "Mercedes"]
 cars.unshift("Ford");
 console.log(cars); // ["Ford", "Toyota", "Honda", "Mercedes"]
 Shuningdek, array elementlari ustida turli amallar bajarish mumkin: elementlar bir-biriga qo'shish, kesishish, o'chirish va boshqa operatsiyalar uchun ko'rinishlar mavjud.
+
+
+
+
+//////// Object /////////////
+
+JavaScript-da ob'ektlar ma'lumotlar strukturasini ifodalash uchun ishlatiladigan ma'lumotlar turidir. Ob'ektlar kalit-qiymat juftliklari bilan bog'langan xususiyatlarga ega bo'lishi mumkin.
+
+Ob'ektlar {} jingalak qavslar orasida yaratiladi va xususiyatlar qo'sh tirnoq yoki bitta tirnoq ichida ko'rsatiladi. Xususiyatlar kalit va qiymat juftlari sifatida tanilgan. Mana bir misol:
+
+odam = {
+   ism: "Jon", // nom atributi
+   yosh: 30, // yosh atributi
+   shahar: "Nyu-York" // shahar atributi
+};
+Ushbu misolda biz shaxs nomli ob'ektni yaratdik. Ob'ekt uchta xususiyatga ega (ism , yosh va shahar ) va har bir xususiyat aniqlangandan keyin vergul bilan ajratiladi.
+
+Ob'ekt xususiyatlariga kirish uchun nuqta (. ) yoki kvadrat qavs ([] ) belgilaridan foydalanishimiz mumkin. Mana bir misol:
+
+console.log(shaxs.ism); // chiqish: "Jon"
+console.log(shaxs["yosh"]); // chiqish: 30
+Xususiyatlarga person.name kabi nuqta belgisi yoki person["age"] kabi kvadrat qavs belgisi yordamida kirishimiz mumkin.
+
+Ob'ekt xususiyatlarini yangilash yoki yangi xususiyatlarni qo'shish ham mumkin:
+
+kishi.yosh = 35; // yosh atributini yangilash
+person.city = "London"; // shahar mulkini yangilash
+person.job = "Tuzuvchi"; // ish xususiyatini qo'shing
+Biz birinchi misollarda aniqlangan shaxs ob'ektining yoshi va shahar ma'lumotlarini yangiladik, shuningdek, yangi ish xususiyatini qo'shdik.
+
+Ob'ekt usullarini ham aniqlash mumkin. Usul ob'ektning funktsiyaga aylanishi xususiyatiga ishora qiladi. Mana bir misol:
+
+odam = {
+   ism: "Jon",
+   Yosh: 30,
+   shahar: "Nyu-York",
+   salomlashing: function() {
+     console.log("Salom, men " + this.name + "!");
+   }
+};
+
+odam.salom(); // chiqish: "Salom, men Jonman!"
+Ushbu misolda biz salomlash deb nomlangan usulni aniqladik, u "Salom, men " + this.name + "!" xabarni chop etadi.
+
+JavaScript ob'ektlari ma'lumotlar tuzilmalarini ifodalash va ularni yanada murakkab tizimlar yoki ilovalar yaratish uchun funktsiyalar bilan birlashtirish uchun foydalidir. Ob'ektlar ma'lumotlarni manipulyatsiya qilish, ob'ektga yo'naltirilgan dasturlash, JSON (JavaScript Object Notation) bilan ishlov berish va boshqalar uchun keng qo'llaniladigan konstruktsiyadir.
