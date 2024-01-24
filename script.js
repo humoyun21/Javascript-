@@ -244,7 +244,7 @@ console.log(result);
 console.log(result1);
 console.log(result2);
 console.log(result3);
-*/
+
 const car = {
   name: "Ferrari",
   year: 2018,
@@ -276,3 +276,16 @@ const car = {
 console.log(car);
 car.getname();
 car.getenergy();
+
+
+let arr = [7, 4, 2, 3, 1, 4, 5, 2, 4, 5, 7];
+let newarr = [];
+for (let i = 0; i < arr.length; i++) {
+  if (!newarr.includes(arr[i])) {
+    newarr.push(arr[i]);
+  }
+}
+console.log(newarr);
+*/
+
+

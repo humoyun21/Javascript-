@@ -358,3 +358,39 @@ odam.salom(); // chiqish: "Salom, men Jonman!"
 Ushbu misolda biz salomlash deb nomlangan usulni aniqladik, u "Salom, men " + this.name + "!" xabarni chop etadi.
 
 JavaScript ob'ektlari ma'lumotlar tuzilmalarini ifodalash va ularni yanada murakkab tizimlar yoki ilovalar yaratish uchun funktsiyalar bilan birlashtirish uchun foydalidir. Ob'ektlar ma'lumotlarni manipulyatsiya qilish, ob'ektga yo'naltirilgan dasturlash, JSON (JavaScript Object Notation) bilan ishlov berish va boshqalar uchun keng qo'llaniladigan konstruktsiyadir.
+
+
+
+
+////////////////////////
+
+JavaScript obyektlar dasturlash tili bo'lib, bu tilda obyektlar yaratish, ularning xususiyatlari va metodlariga murojaat qilish va ulardan foydalanish mumkin. JavaScript obyektlari, o'zlariga oid malumotlarni saqlash va boshqarish uchun ishlatiladi.
+
+Obyektlar, kalit so'ziga ega bo'lgan bir yoki bir nechta xususiyatlar va funksiyalardan iborat turli ob'ektlar, masalan, shaxslar, an'anaviy formulalar, elementlar va hokazo bo'lishi mumkin. Bu xususiyat va funksiyalarning har biri obyektlarga oid bilimlarni olib bormoqchi bo'lgani natijasida, kodni biriktirish va boshqarish muhim daraja oshmoqda.
+
+Obyektlar JavaScriptda keyingi sintaksis yordamida yaratiladi:
+
+var obyekt = {
+xususiyat1: qiymat1,
+xususiyat2: qiymat2,
+// Qo'shimcha xususiyatlarga o'zgarishli murojaat qilish mumkin
+xususiyat3: qiymat3,
+funksiya1: function() {
+// Funksiyadan foydalanish
+},
+funksiya2: function() {
+// Funksiyadan foydalanish
+}
+};
+
+Bu sintaksisda obyektning xususiyatlari (key) va ularning qiymatlari yuqorida keltirilgan. Xususiyatlarga oliy formatda num, harf, _ va $ belgilari qo'shish mumkin. Obyektning xususiyatlariga unikal kalitlar deyiladi, ya'ni bir xususiyat bir nechta marta tanlash mumkin emas.
+
+Obyektning xususiyatlariga murojaat qilish uchun qisqa sintaksisidan foydalanish mumkin:
+
+console.log(obyekt.xususiyat1); // qiymat1
+
+Obyektning funksiyalariga murojaat qilish uchun ham shu sintaksisdan foydalanish mumkin:
+
+obyekt.funksiya1(); // Funksiyadan foydalanish
+
+JavaScript obyektlari turli ma'lumotlarni bitta joyda birlashtirish va ularga qo'shimcha funktsionallik berishga imkoniyat beradi. Ushbu tushuncha yordamida JavaScriptda obyekt orqali turli vazifalar bajarish mumkin.
