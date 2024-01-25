@@ -394,3 +394,126 @@ Obyektning funksiyalariga murojaat qilish uchun ham shu sintaksisdan foydalanish
 obyekt.funksiya1(); // Funksiyadan foydalanish
 
 JavaScript obyektlari turli ma'lumotlarni bitta joyda birlashtirish va ularga qo'shimcha funktsionallik berishga imkoniyat beradi. Ushbu tushuncha yordamida JavaScriptda obyekt orqali turli vazifalar bajarish mumkin.
+
+
+
+
+
+
+
+
+
+
+
+
+
+A function in JavaScript is a block of code that is designed to perform a specific task. It is defined using the function keyword, followed by a name (optional), a list of parameters (optional), and a block of code enclosed in curly braces {}.
+
+Here is an example of a basic function in JavaScript:
+
+javascript
+Copy code
+function sayHello() {
+  console.log("Hello!");
+}
+In the above example, sayHello is the name of the function. It does not accept any parameters. The code block inside the function is console.log("Hello!");, which simply logs the string "Hello!" to the console.
+
+Functions can also accept parameters, which allow you to pass values into the function for it to use. Here's an example:
+
+javascript
+Copy code
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+In the above example, the greet function accepts one parameter called name. It concatenates the value of name with the string "Hello, " and logs it to the console.
+
+To call (or invoke) a function, you simply use the function's name followed by parentheses, optionally passing in any required arguments. Here's an example:
+
+scss
+Copy code
+sayHello(); // Output: Hello!
+
+greet("John"); // Output: Hello, John!
+In the first example, sayHello() is called without any arguments, while in the second example, greet("John") is called with the value "John" as the argument
+
+
+
+In JavaScript, an array is a variable that can hold multiple values. It is a data structure that allows you to store and access multiple values using a single variable name.
+
+Here is an example of how to create an array in JavaScript:
+
+javascript
+Copy code
+let fruits = ["apple", "banana", "orange"];
+In this example, the variable fruits is an array that contains three elements: "apple", "banana", and "orange". The elements are enclosed in square brackets [] and are separated by commas.
+
+You can access individual elements in the array by their index. The index of the first element is 0, the second element is 1, and so on. Here's an example of how to access elements in an array:
+
+css
+Copy code
+console.log(fruits[0]); // Output: "apple"
+console.log(fruits[1]); // Output: "banana"
+console.log(fruits[2]); // Output: "orange"
+You can also change the value of an element in an array by assigning a new value to its index. Here's an example:
+
+lua
+Copy code
+fruits[1] = "grape";
+console.log(fruits); // Output: ["apple", "grape", "orange"]
+Arrays in JavaScript can contain elements of different data types, such as numbers, strings, or even other arrays. You can add elements to the end of an array using the push() method and remove elements from the end using the pop() method.
+
+scss
+Copy code
+let numbers = [1, 2, 3];
+
+numbers.push(4);
+console.log(numbers); // Output: [1, 2, 3, 4]
+
+numbers.pop();
+console.log(numbers); // Output: [1, 2, 3]
+You can also get the length of an array using the length property:
+
+javascript
+Copy code
+console.log(fruits.length); // Output: 3
+Arrays in JavaScript are very versatile and can be used in a variety of ways to store and manipulate data.
+
+
+In JavaScript, objects are dynamic data structures used to store and organize data. They consist of key-value pairs, where each key is a unique identifier and each value can be any data type (such as strings, numbers, arrays, or even other objects).
+
+Objects can be defined using the object literal notation, which uses curly brackets {} to enclose the key-value pairs:
+
+css
+Copy code
+var person = { name: "John", age: 25 };
+You can also create objects using the object constructor syntax:
+
+javascript
+Copy code
+var person = new Object();
+person.name = "John";
+person.age = 25;
+Objects have properties and methods. Properties are the values associated with the object's keys, while methods are functions defined within the object.
+
+Accessing object properties can be done using dot notation or square brackets notation:
+
+less
+Copy code
+var name = person.name; // using dot notation
+var age = person["age"]; // using square brackets notation
+Methods are accessed and executed using the dot notation:
+
+javascript
+Copy code
+person.sayHello = function() {
+   console.log("Hello, my name is " + this.name);
+};
+person.sayHello(); // Output: Hello, my name is John
+Objects can be used to model real-world entities, such as a person with their name and age, or more complex structures like a car with properties like make, model, and year.
+
+They are also commonly used in JavaScript to represent data structures like arrays and linked lists, as well as to encapsulate related functions and shared data within modules.
+
+
+
+
+

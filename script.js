@@ -287,5 +287,14 @@ for (let i = 0; i < arr.length; i++) {
 }
 console.log(newarr);
 */
-
-
+let n = 62500;
+n = n + "";
+let teskar = n.split("").reverse();
+let x=[]
+for (let i = 0; i < teskar; i++) {
+  if (i==0) {
+  
+  }
+  
+}
+console.log(teskar);
