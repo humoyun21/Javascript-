@@ -582,3 +582,36 @@ DOM manipulation allows you to dynamically modify and interact with the content 
 
 
 
+
+
+vJavaScript-da DOM (Hujjat ob'ekt modeli) - bu HTML hujjatini ob'ektlarning tuzilgan daraxti sifatida ifodalovchi dasturlash interfeysi. Bu sizga HTML elementlari va ularning xossalari bilan veb-sahifada ishlash va ularni boshqarish imkonini beradi.
+
+JavaScript-da DOM bilan bog'liq ba'zi muhim tushunchalar:
+
+Hujjat ob'ekti: HTML hujjatini ifodalovchi yuqori darajadagi ob'ekt. Hujjatni manipulyatsiya qilishning turli xususiyatlari va usullariga kirishni ta'minlaydi.
+
+Elementlar: <div>, <p>, <h1> va boshqalar kabi HTML elementlari DOMda ob'ektlar sifatida taqdim etiladi. Siz JavaScript-dan foydalanib, ularga kirishingiz, o'zgartirishingiz yoki yangi elementlar yaratishingiz mumkin.
+
+Xususiyatlar: DOMdagi har bir element id, classList, innerHTML va boshqalar kabi atributlarini ifodalovchi xususiyatlarga ega. Elementni boshqarish uchun ushbu xususiyatlarga kirishingiz yoki o'zgartirishingiz mumkin.
+
+Usullar: DOM getElementById, querySelector, createElement, appendChild va boshqalar kabi elementlarni manipulyatsiya qilishning turli usullarini taqdim etadi. Bu usullar elementlarni tanlash, yangi elementlar yaratish, mavjud elementlarni o‘zgartirish yoki hujjatga elementlar qo‘shish imkonini beradi.
+
+Voqealar: DOM foydalanuvchi harakatlariga (masalan, bosish, tugmachalarni bosish va h.k.) yoki boshqa hodisalarga (sahifa yuklanishi yoki yuborilayotgan shakl) javob berishga imkon beruvchi hodisalarni boshqarishni qoʻllab-quvvatlaydi. Muayyan hodisa yuz berganda JavaScript kodini bajarish uchun hodisalar tinglovchilarini elementlarga biriktirishingiz mumkin.
+
+JavaScript-da DOM yordamida elementga kirish va uning xususiyatlarini o'zgartirishni ko'rsatadigan misol kod parchasi:
+
+javascript
+Kodni nusxalash
+// Elementga ID orqali kirish
+const myElement = document.getElementById('myElementId');
+
+// Elementning innerHTML xususiyatini o'zgartirish
+myElement.innerHTML = 'Yangi tarkib';
+
+// Yangi element yaratish
+const newElement = document.createElement('div');
+newElement.textContent = 'Salom, dunyo!';
+
+// Hujjatga yangi element qo'shish
+document.body.appendChild(newElement);
+Umuman olganda, JavaScript-dagi DOM veb-sahifadagi HTML elementlarini manipulyatsiya qilish va ular bilan ishlash uchun kuchli vositalar to'plamini taqdim etadi.
