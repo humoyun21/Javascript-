@@ -615,3 +615,70 @@ newElement.textContent = 'Salom, dunyo!';
 // Hujjatga yangi element qo'shish
 document.body.appendChild(newElement);
 Umuman olganda, JavaScript-dagi DOM veb-sahifadagi HTML elementlarini manipulyatsiya qilish va ular bilan ishlash uchun kuchli vositalar to'plamini taqdim etadi.
+
+
+
+JavaScript-da obyektlar, ma'lumotlarni joylash uchun bo'sh joylarni tanlashni osonlashtiradigan moslashtirish sifatida ishlatiladi. Obyekt, kalitlar va qiymatlardan iborat bo'lishi mumkin.
+
+Obyektning yaratish uchun, quyidagi sintaksisdan foydalaniladi:
+
+javascript
+Copy code
+var obyekt = {
+    kalit1: qiymat1,
+    kalit2: qiymat2,
+    // ...
+};
+Misol uchun, dastlabki ismning va yoshning ma'lumotlarini o'z ichiga olish uchun quyidagi obyekt yaratiladi:
+
+css
+Copy code
+var shaxs = {
+    ism: "Vali",
+    yosh: 30
+};
+Obyektning kalitlari orqali ma'lumotlarga murojaat qilish uchun, bir nechta usullar mavjud. Misol uchun, obyektning kalitlariga murojaat qilish uchun quyidagi sintaksisdan foydalaniladi:
+
+text
+Copy code
+obyekt.kalit;
+Yuqoridagi misolda "shaxs" obyektining "ism" va "yosh" kalitlariga quyidagi ko'rinishda murojaat qilinadi:
+
+perl
+Copy code
+shaxs.ism; // "Vali"
+shaxs.yosh; // 30
+Obyektning kalitlariga murojaat qilishning boshqa bir usuli, kvadrat qavs ([]) belgisini ishlatish hisoblanadi:
+
+css
+Copy code
+obyekt["kalit"];
+Misol uchun, "shaxs" obyektining "ism" va "yosh" kalitlariga quyidagi ko'rinishda murojaat qilinadi:
+
+less
+Copy code
+shaxs["ism"]; // "Vali"
+shaxs["yosh"]; // 30
+Bundan tashqari, obyektlar bilan bir nechta yordam o'rnatish, obyektning kalitlarini qo'shish va o'chirish imkoniyatlari mavjud.
+
+
+"DOM" hujjat ob'ekt modeli degan ma'noni anglatadi. Bu HTML va XML hujjatlari uchun dasturlash interfeysi boʻlib, hujjat mazmuni va tuzilishiga kirish va uni boshqarish imkonini beradi.
+
+JavaScript-da DOM bilan ishlash uchun foydalanishingiz mumkin bo'lgan bir nechta usullar mavjud:
+
+1. getElementById: Bu usul hujjatdagi elementni uning noyob identifikatori orqali olish imkonini beradi.
+Misol: document.getElementById("myId") - "myId" identifikatoriga ega elementni qaytaradi.
+
+2. getElementsByClassName: Bu usul muayyan sinf nomiga ega bo'lgan elementlar to'plamini qaytaradi.
+Misol: document.getElementsByClassName("myClass") - "myClass" klassi bilan barcha elementlarni qaytaradi.
+
+3. getElementsByTagName: Bu usul berilgan teg nomiga ega elementlar to‘plamini qaytaradi.
+Misol: document.getElementsByTagName("p") - sahifadagi barcha paragraflarni qaytaradi.
+
+4. querySelector: Bu usul belgilangan CSS selektoriga mos keladigan birinchi elementni qaytaradi.
+Misol: document.querySelector("#myId") - "myId" identifikatoriga ega elementni qaytaradi.
+
+5. querySelectorAll: Bu usul belgilangan CSS selektoriga mos keladigan elementlar to'plamini qaytaradi.
+Misol: document.querySelectorAll(".myClass") - "myClass" klassi bilan barcha elementlarni qaytaradi.
+
+Bular JavaScript-da DOM bilan ishlashda foydalanishingiz mumkin bo'lgan umumiy usullardan bir nechtasi. DOM usullari sizga elementlarni manipulyatsiya qilish, ularning atributlarini o'zgartirish, uslublarini o'zgartirish va sahifadagi boshqa amallarni bajarish imkonini beradi.
