@@ -9,18 +9,22 @@ Bu repozitoriya JavaScript tilini o'rganish uchun boshlang'ich darajadagi dastur
 ## Mavzular
 
 1. [JavaScriptni O'rganishga Kirish](01_intro/README.md)
+
    - JavaScript haqida umumiy tushuncha
    - JavaScript fayl strukturasini tushunish
 
 2. [O'zgaruvchilar va Ma'lumot Turlari](02_variables_data_types/README.md)
+
    - O'zgaruvchilar (let, const, var)
    - Ma'lumot turlari (string, number, boolean)
 
 3. [Operatorlar](03_operators/README.md)
+
    - Arifmetik operatorlar
    - Murakkab operatorlar (++, --, +=, -=, va h.k.)
 
 4. [Shartlar va Qo'shimcha Amallar](04_conditions_loops/README.md)
+
    - if, else if, else
    - switch case
    - for, while loop
@@ -28,7 +32,7 @@ Bu repozitoriya JavaScript tilini o'rganish uchun boshlang'ich darajadagi dastur
 5. [Funksiyalar](05_functions/README.md)
    - Funksiyalarga kirish
    - Argumetlar va qaytarish
-   JavaScript-da o'zgaruvchilar ma'lumotlarni saqlash va boshqarish uchun ishlatiladi. Ular har xil turdagi qiymatlarni, masalan, raqamlar, satrlar, mantiqiy qiymatlar, ob'ektlar va boshqalarni saqlaydigan konteyner vazifasini bajaradi. JavaScript-da o'zgaruvchini qanday e'lon qilishingiz mumkin:
+     JavaScript-da o'zgaruvchilar ma'lumotlarni saqlash va boshqarish uchun ishlatiladi. Ular har xil turdagi qiymatlarni, masalan, raqamlar, satrlar, mantiqiy qiymatlar, ob'ektlar va boshqalarni saqlaydigan konteyner vazifasini bajaradi. JavaScript-da o'zgaruvchini qanday e'lon qilishingiz mumkin:
 
 ```javascript
 let variableName; // Deklaratsiya
@@ -51,7 +55,7 @@ JavaScript shuningdek, “var” va “const” kabi turli xil oʻzgaruvchan kal
 Shuni ta'kidlash kerakki, JavaScript dinamik ravishda yozilgan tildir, ya'ni siz kodingiz davomida o'zgaruvchining qiymati va turini o'zgartirishingiz mumkin:
 
 ```javascript
-let greetings = 'Salom!';
+let greetings = "Salom!";
 salom = 42; // Valid - qiymat va turni o'zgartirish
 ```
 
@@ -60,7 +64,7 @@ JavaScript o'zgaruvchilari katta-kichik harflarga sezgir, shuning uchun "myVaria
 Esda tutingki, “firstName”, “yosh” yoki “isLoggedin” kabi maqsadlarini tavsiflovchi mazmunli oʻzgaruvchilar nomlarini tanlash yaxshi amaliyotdir.
 
 Umid qilamanki, JavaScript o'zgaruvchilari haqidagi ushbu kirish sizga boshlashingizga yordam beradi! Agar sizda qo'shimcha savollar bo'lsa yoki qo'shimcha yordam kerak bo'lsa, bemalol so'rang. Baxtli kodlash!
-JavaScript-da siz +, -, * va / kabi oddiy matematik operatorlardan foydalangan holda raqamlar ustida qo'shish, ayirish, ko'paytirish va bo'lish kabi turli xil amallarni bajarishingiz mumkin. Misol uchun, agar siz ikkita raqamni qo'shmoqchi bo'lsangiz, quyidagi koddan foydalanishingiz mumkin:
+JavaScript-da siz +, -, \* va / kabi oddiy matematik operatorlardan foydalangan holda raqamlar ustida qo'shish, ayirish, ko'paytirish va bo'lish kabi turli xil amallarni bajarishingiz mumkin. Misol uchun, agar siz ikkita raqamni qo'shmoqchi bo'lsangiz, quyidagi koddan foydalanishingiz mumkin:
 
 ```javascript
 soni 1 = 5 bo'lsin;
@@ -73,26 +77,24 @@ JavaScript shuningdek, “Math.sqrt()” funksiyasi yordamida raqamning kvadrat 
 
 avaScriptda for operatori, bir dasturchining ko'p marta bir narsani takrorlashi, shartni tekshirishi va har bir takrorlanishda biror amalni bajarishi uchun ishlatiladi.
 
-
-
-///////////////  for /////////////
+/////////////// for /////////////
 for operatorining syntaxi quyidagicha:
 
 for (initialization; condition; increment/decrement) {
-  // code to be executed
+// code to be executed
 }
 for (initialization; condition; increment/decrement) {
-  // code to be executed
+// code to be executed
 }
 initialization : birinchi takrorlashdan oldin ishga tushirilgan o'zgaruvchilar yoki qiymatlar.
 condition : takrorlashning har bir bosqichida tekshiriladigan shart, agar shart rost bo'lsa takrorlanish davom etadi, aks holda takrorlar tugab qoladi.
 increment/decrement : har bir takrorlanishda o'zgaruvchining qiymatini o'zgartirish yoki kamaytirish bilan bog'liq qism.
 Quyidagi misol for operatorini ishlatishni namoyon qiladi:
 for (let i = 0; i < 5; i++) {
-  console.log(i);
+console.log(i);
 }
 for (let i = 0; i < 5; i++) {
-  console.log(i);
+console.log(i);
 }
 Bu dastur i ni 0 qiymatidan boshlab 5 dan kichik bo'lguncha takrorlaydi. Har bir takrorlanishda i ni konsolga chiqaradi va i ni 1 ga oshiradi. Natijada, quyidagi ma'lumotlarni konsolga chiqaradi:
 0
@@ -102,13 +104,13 @@ Bu dastur i ni 0 qiymatidan boshlab 5 dan kichik bo'lguncha takrorlaydi. Har bir
 4
 for operatori boshqa turli ko'rinishlarda ham qo'llanilishi mumkin, masalan, bir massivdagi har bir elementni tekshirish va amallarni bajarish uchun yoki N^2 darajadagi yovuz sonlar bilan ishlash uchun.
 
-////////////////////   while     //////////////
+//////////////////// while //////////////
 JavaScript'da while operatori, belgilangan shart rost bo'lganda takrorlanishni davom ettiradi.
 
 while operatorining syntaxi quyidagicha:
 
 while (condition) {
-  // code to be executed
+// code to be executed
 }
 condition : takrorlanayotgan har bir takrorlanishda tekshiriladigan shart. Agar shart rost bo'lsa takrorlanish davom etadi, aks holda takrorlar tugab qoladi.
 Quyidagi misol, while operatorini ishlatishni namoyon qiladi:
@@ -116,8 +118,8 @@ Quyidagi misol, while operatorini ishlatishni namoyon qiladi:
 let i = 0;
 
 while (i < 5) {
-  console.log(i);
-  i++;
+console.log(i);
+i++;
 }
 Bu dastur i ni 0 qiymatidan boshlab 5 dan kichik bo'lguncha takrorlaydi. Har bir takrorlanishda i ni konsolga chiqaradi va i ni 1 ga oshiradi. Natijada, quyidagi ma'lumotlarni konsolga chiqaradi:
 
@@ -134,26 +136,21 @@ let sum = 0;
 let i = 1;
 
 while (i <= 100) {
-  sum += i;
-  i++;
+sum += i;
+i++;
 }
 
 console.log(sum); // 5050
 Bu dasturda sum o'zgaruvchisiga 1 dan 100 gacha bo'lgan butun sonlar yig'indisini hisoblaydi va natijani konsolga chiqaradi. Natija 5050 bo'ladi. while operatori foydalanuvchiga qo'shimcha shartlarga asosan takrorlarni bajarish imkonini beradi.
 
-
-
-
-
 ////////////// do while /////////////
-
 
 JavaScript'da while operatori, belgilangan shart rost bo'lganda takrorlanishni davom ettiradi.
 
 while operatorining syntaxi quyidagicha:
 
 while (condition) {
-  // code to be executed
+// code to be executed
 }
 condition : takrorlanayotgan har bir takrorlanishda tekshiriladigan shart. Agar shart rost bo'lsa takrorlanish davom etadi, aks holda takrorlar tugab qoladi.
 Quyidagi misol, while operatorini ishlatishni namoyon qiladi:
@@ -161,8 +158,8 @@ Quyidagi misol, while operatorini ishlatishni namoyon qiladi:
 let i = 0;
 
 while (i < 5) {
-  console.log(i);
-  i++;
+console.log(i);
+i++;
 }
 Bu dastur i ni 0 qiymatidan boshlab 5 dan kichik bo'lguncha takrorlaydi. Har bir takrorlanishda i ni konsolga chiqaradi va i ni 1 ga oshiradi. Natijada, quyidagi ma'lumotlarni konsolga chiqaradi:
 
@@ -179,8 +176,8 @@ let sum = 0;
 let i = 1;
 
 while (i <= 100) {
-  sum += i;
-  i++;
+sum += i;
+i++;
 }
 
 console.log(sum); // 5050
@@ -188,21 +185,18 @@ Bu dasturda sum o'zgaruvchisiga 1 dan 100 gacha bo'lgan butun sonlar yig'indisin
 
 //////Function ///////////////////
 
-
-
 JavaScriptda "function" atamasi yordamida kodni ifodalashning "mavzusi" yozish mumkin. "function" atamasida funksiyani tashkil etadigan JavaScript kodini yozamiz. Biz funksiyani biror amalni bajarish uchun yoki boshqa kodni qayta-qayta ishlatish uchun yozamiz.
 
 Misol uchun, quyidagi JavaScript kodida "mavzu" nomli bir funksiya yozilgan:
 
 function mavzu() {
-    console.log("Bu funksiya mavzusi!");
+console.log("Bu funksiya mavzusi!");
 }
 Bu funksiya to'g'ridan-to'g'ri konsolga "Bu funksiya mavzusi!" matnini chop etadi.
 
 Funksiyani chaqirish uchun esa funksiya nomini yozib, "()" belgilarini qo'shib, keyincha funksiya chaqirishla xarakterlanadi:
 
 mavzu(); // "Bu funksiya mavzusi!" ni konsolga chop etadi
-
 
 ///// Takrorlash //////
 
@@ -211,39 +205,36 @@ if: if operatori, belgilangan shartning qanoatlantirilishi bilan bir yoki bir ne
 let x = 10;
 
 if (x > 5) {
-  console.log("x 5 dan katta");
+console.log("x 5 dan katta");
 } else {
-  console.log("x 5 dan kichik yoki teng");
+console.log("x 5 dan kichik yoki teng");
 }
 loop: Dasturlarning to'rt araliq tsikllarini bajarish imkonini beradi. Araliq tsikllari, biror shartning qanoatlantirilishidan bog'liq ravishda ko'dlar to'plamini takrorlashga imkon beradi. for va while tsikllari eng ko'p o'rganiladigan tsikllardir.
 
 // for tsikli
 for (let i = 0; i < 5; i++) {
-  console.log(i);
+console.log(i);
 }
 
 // while tsikli
 let x = 0;
 while (x < 5) {
-  console.log(x);
-  x++;
+console.log(x);
+x++;
 }
 funksiya: JavaScriptda funksiya, biror amallarni bajaruvchi rejalarni ifodalash uchun yaratilgan oddiy rejalardir. Funksiyalar qaytaradigan natijalarni taqdim etish, biror parametrlarni qabul qilish, yangi qiymatlar yaratish, ko'dni qayta ishlatish va ko'p qo'shimcha imkoniyatlarga ega bo'lishlari mumkin. Bunda, funksiya yangi obyekt qaytarish, console.da ma'lumotlar chiqarish, matritsatni ustunlarini yig'ish kabi ko'p ishlar bajarishi mumkin. Misol uchun:
 
 function add(a, b) {
-  return a + b;
+return a + b;
 }
 
 console.log(add(5, 3)); // 8
 
 function greet(name) {
-  console.log(`Assalomu alaykum, ${name}!`);
+console.log(`Assalomu alaykum, ${name}!`);
 }
 
 greet("Diyor"); // Assalomu alaykum, Diyor!
-
-
-
 
 JavaScript-da funksiya, bir qator kodni bitta nom bilan to'plagan qismidir. Funksiya nomidan keyin, tugunlarni () orqali ajratilgan parametrlarni olish uchun argumentlar kiritilishi mumkin. Funksiya ichidagi kod qatorlari {} yordamida ajratiladi.
 
@@ -252,28 +243,27 @@ JavaScript-dagi funksiya turining eng asosiy ikki turi mavjud:
 Tavsifi yo'q funksiya (Секцияona): Bu turdagi funksiyalar parametr qabul qilmasa ham, boshqacha bitta amalni bajaradi va biron bir qiymat qaytarmaydi. Odatda, bu tur funksiyalar void funksiyalari deb ham ataladi. Quyidagi misol tavsifi yo'q funksiyaning bir misoli:
 
 function greetings() {
-  console.log("Salom!");
+console.log("Salom!");
 }
 
 greetings(); // "Salom!" chiqadi
 Qiymat qaytaruvchi funksiya: Bu turdagi funksiyalar, biror amalni bajarib, uni qaytamay va uni boshqa o'zgaruvchiga o'zlashtirish uchun qiymat qaytaradigan funksiyalardir. Bu amal qaytayotgan qiymat, return operatori orqali belgilanadi. Quyidagi misol qiymat qaytaruvchi funksiyaning bir misoli:
 
 function sum(a, b) {
-  return a + b;
+return a + b;
 }
 
-let result = sum(3, 4); 
+let result = sum(3, 4);
 console.log(result); // 7 chiqadi
 JavaScript-da funksiyalarga nom berish zarur emas. Uni o'zgaruvchiga tenglashtirish orqali saqlashingiz ham mumkin:
 
 let square = function(x) {
-  return x * x;
+return x \* x;
 };
 
 let result = square(5);
 console.log(result); // 25 chiqadi
 JavaScript-da funksiyalarni boshqa funksiyalar ichida yaratish, funksiya nomini olib kelish, tushunmas (callback) sifatida uzatish va boshqa ko'plab asosiy amallarni bajarish uchun qo'llanishidagi ko'plab imkoniyatlardan faqat ayriy maqsadlari uchun foydalanish mumkin.
-
 
 Javascript tilida, arraylar elementlarni bir joyga joylashtirilgan ma'lumotlar to'plami sifatida ishlatiladi. Arraylarni aniqlash uchun [] qavs ichida elementlarni ifodalash kerak. Har bir element vergul bilan ajratiladi.
 
@@ -314,9 +304,6 @@ cars.unshift("Ford");
 console.log(cars); // ["Ford", "Toyota", "Honda", "Mercedes"]
 Shuningdek, array elementlari ustida turli amallar bajarish mumkin: elementlar bir-biriga qo'shish, kesishish, o'chirish va boshqa operatsiyalar uchun ko'rinishlar mavjud.
 
-
-
-
 //////// Object /////////////
 
 JavaScript-da ob'ektlar ma'lumotlar strukturasini ifodalash uchun ishlatiladigan ma'lumotlar turidir. Ob'ektlar kalit-qiymat juftliklari bilan bog'langan xususiyatlarga ega bo'lishi mumkin.
@@ -324,9 +311,9 @@ JavaScript-da ob'ektlar ma'lumotlar strukturasini ifodalash uchun ishlatiladigan
 Ob'ektlar {} jingalak qavslar orasida yaratiladi va xususiyatlar qo'sh tirnoq yoki bitta tirnoq ichida ko'rsatiladi. Xususiyatlar kalit va qiymat juftlari sifatida tanilgan. Mana bir misol:
 
 odam = {
-   ism: "Jon", // nom atributi
-   yosh: 30, // yosh atributi
-   shahar: "Nyu-York" // shahar atributi
+ism: "Jon", // nom atributi
+yosh: 30, // yosh atributi
+shahar: "Nyu-York" // shahar atributi
 };
 Ushbu misolda biz shaxs nomli ob'ektni yaratdik. Ob'ekt uchta xususiyatga ega (ism , yosh va shahar ) va har bir xususiyat aniqlangandan keyin vergul bilan ajratiladi.
 
@@ -346,21 +333,18 @@ Biz birinchi misollarda aniqlangan shaxs ob'ektining yoshi va shahar ma'lumotlar
 Ob'ekt usullarini ham aniqlash mumkin. Usul ob'ektning funktsiyaga aylanishi xususiyatiga ishora qiladi. Mana bir misol:
 
 odam = {
-   ism: "Jon",
-   Yosh: 30,
-   shahar: "Nyu-York",
-   salomlashing: function() {
-     console.log("Salom, men " + this.name + "!");
-   }
+ism: "Jon",
+Yosh: 30,
+shahar: "Nyu-York",
+salomlashing: function() {
+console.log("Salom, men " + this.name + "!");
+}
 };
 
 odam.salom(); // chiqish: "Salom, men Jonman!"
 Ushbu misolda biz salomlash deb nomlangan usulni aniqladik, u "Salom, men " + this.name + "!" xabarni chop etadi.
 
 JavaScript ob'ektlari ma'lumotlar tuzilmalarini ifodalash va ularni yanada murakkab tizimlar yoki ilovalar yaratish uchun funktsiyalar bilan birlashtirish uchun foydalidir. Ob'ektlar ma'lumotlarni manipulyatsiya qilish, ob'ektga yo'naltirilgan dasturlash, JSON (JavaScript Object Notation) bilan ishlov berish va boshqalar uchun keng qo'llaniladigan konstruktsiyadir.
-
-
-
 
 ////////////////////////
 
@@ -383,7 +367,7 @@ funksiya2: function() {
 }
 };
 
-Bu sintaksisda obyektning xususiyatlari (key) va ularning qiymatlari yuqorida keltirilgan. Xususiyatlarga oliy formatda num, harf, _ va $ belgilari qo'shish mumkin. Obyektning xususiyatlariga unikal kalitlar deyiladi, ya'ni bir xususiyat bir nechta marta tanlash mumkin emas.
+Bu sintaksisda obyektning xususiyatlari (key) va ularning qiymatlari yuqorida keltirilgan. Xususiyatlarga oliy formatda num, harf, \_ va $ belgilari qo'shish mumkin. Obyektning xususiyatlariga unikal kalitlar deyiladi, ya'ni bir xususiyat bir nechta marta tanlash mumkin emas.
 
 Obyektning xususiyatlariga murojaat qilish uchun qisqa sintaksisidan foydalanish mumkin:
 
@@ -395,18 +379,6 @@ obyekt.funksiya1(); // Funksiyadan foydalanish
 
 JavaScript obyektlari turli ma'lumotlarni bitta joyda birlashtirish va ularga qo'shimcha funktsionallik berishga imkoniyat beradi. Ushbu tushuncha yordamida JavaScriptda obyekt orqali turli vazifalar bajarish mumkin.
 
-
-
-
-
-
-
-
-
-
-
-
-
 A function in JavaScript is a block of code that is designed to perform a specific task. It is defined using the function keyword, followed by a name (optional), a list of parameters (optional), and a block of code enclosed in curly braces {}.
 
 Here is an example of a basic function in JavaScript:
@@ -414,7 +386,7 @@ Here is an example of a basic function in JavaScript:
 javascript
 Copy code
 function sayHello() {
-  console.log("Hello!");
+console.log("Hello!");
 }
 In the above example, sayHello is the name of the function. It does not accept any parameters. The code block inside the function is console.log("Hello!");, which simply logs the string "Hello!" to the console.
 
@@ -423,7 +395,7 @@ Functions can also accept parameters, which allow you to pass values into the fu
 javascript
 Copy code
 function greet(name) {
-  console.log("Hello, " + name + "!");
+console.log("Hello, " + name + "!");
 }
 In the above example, the greet function accepts one parameter called name. It concatenates the value of name with the string "Hello, " and logs it to the console.
 
@@ -435,8 +407,6 @@ sayHello(); // Output: Hello!
 
 greet("John"); // Output: Hello, John!
 In the first example, sayHello() is called without any arguments, while in the second example, greet("John") is called with the value "John" as the argument
-
-
 
 In JavaScript, an array is a variable that can hold multiple values. It is a data structure that allows you to store and access multiple values using a single variable name.
 
@@ -478,7 +448,6 @@ Copy code
 console.log(fruits.length); // Output: 3
 Arrays in JavaScript are very versatile and can be used in a variety of ways to store and manipulate data.
 
-
 In JavaScript, objects are dynamic data structures used to store and organize data. They consist of key-value pairs, where each key is a unique identifier and each value can be any data type (such as strings, numbers, arrays, or even other objects).
 
 Objects can be defined using the object literal notation, which uses curly brackets {} to enclose the key-value pairs:
@@ -506,17 +475,12 @@ Methods are accessed and executed using the dot notation:
 javascript
 Copy code
 person.sayHello = function() {
-   console.log("Hello, my name is " + this.name);
+console.log("Hello, my name is " + this.name);
 };
 person.sayHello(); // Output: Hello, my name is John
 Objects can be used to model real-world entities, such as a person with their name and age, or more complex structures like a car with properties like make, model, and year.
 
 They are also commonly used in JavaScript to represent data structures like arrays and linked lists, as well as to encapsulate related functions and shared data within modules.
-
-
-
-
-
 
 ////////////////Dom/////////////
 JavaScript DOM Manipulation
@@ -570,7 +534,7 @@ document.body.appendChild(newElement);
 
 // Event handling
 myElement.addEventListener("click", function() {
-  alert("Element clicked!");
+alert("Element clicked!");
 });
 In this example, we first access an element with the id "myElement" using document.getElementById() . We then modify its HTML content using innerHTML , add a CSS class using setAttribute() , and change the color using style .
 
@@ -579,10 +543,6 @@ Next, we create a new p element using createElement() , set its text content, an
 Finally, we attach an event listener to the myElement using addEventListener() to show an alert when the element is clicked.
 
 DOM manipulation allows you to dynamically modify and interact with the content of a web page, providing powerful capabilities for building interactive web applications.
-
-
-
-
 
 vJavaScript-da DOM (Hujjat ob'ekt modeli) - bu HTML hujjatini ob'ektlarning tuzilgan daraxti sifatida ifodalovchi dasturlash interfeysi. Bu sizga HTML elementlari va ularning xossalari bilan veb-sahifada ishlash va ularni boshqarish imkonini beradi.
 
@@ -616,8 +576,6 @@ newElement.textContent = 'Salom, dunyo!';
 document.body.appendChild(newElement);
 Umuman olganda, JavaScript-dagi DOM veb-sahifadagi HTML elementlarini manipulyatsiya qilish va ular bilan ishlash uchun kuchli vositalar to'plamini taqdim etadi.
 
-
-
 JavaScript-da obyektlar, ma'lumotlarni joylash uchun bo'sh joylarni tanlashni osonlashtiradigan moslashtirish sifatida ishlatiladi. Obyekt, kalitlar va qiymatlardan iborat bo'lishi mumkin.
 
 Obyektning yaratish uchun, quyidagi sintaksisdan foydalaniladi:
@@ -625,17 +583,17 @@ Obyektning yaratish uchun, quyidagi sintaksisdan foydalaniladi:
 javascript
 Copy code
 var obyekt = {
-    kalit1: qiymat1,
-    kalit2: qiymat2,
-    // ...
+kalit1: qiymat1,
+kalit2: qiymat2,
+// ...
 };
 Misol uchun, dastlabki ismning va yoshning ma'lumotlarini o'z ichiga olish uchun quyidagi obyekt yaratiladi:
 
 css
 Copy code
 var shaxs = {
-    ism: "Vali",
-    yosh: 30
+ism: "Vali",
+yosh: 30
 };
 Obyektning kalitlari orqali ma'lumotlarga murojaat qilish uchun, bir nechta usullar mavjud. Misol uchun, obyektning kalitlariga murojaat qilish uchun quyidagi sintaksisdan foydalaniladi:
 
@@ -661,24 +619,93 @@ shaxs["ism"]; // "Vali"
 shaxs["yosh"]; // 30
 Bundan tashqari, obyektlar bilan bir nechta yordam o'rnatish, obyektning kalitlarini qo'shish va o'chirish imkoniyatlari mavjud.
 
-
 "DOM" hujjat ob'ekt modeli degan ma'noni anglatadi. Bu HTML va XML hujjatlari uchun dasturlash interfeysi boʻlib, hujjat mazmuni va tuzilishiga kirish va uni boshqarish imkonini beradi.
 
 JavaScript-da DOM bilan ishlash uchun foydalanishingiz mumkin bo'lgan bir nechta usullar mavjud:
 
 1. getElementById: Bu usul hujjatdagi elementni uning noyob identifikatori orqali olish imkonini beradi.
-Misol: document.getElementById("myId") - "myId" identifikatoriga ega elementni qaytaradi.
+   Misol: document.getElementById("myId") - "myId" identifikatoriga ega elementni qaytaradi.
 
 2. getElementsByClassName: Bu usul muayyan sinf nomiga ega bo'lgan elementlar to'plamini qaytaradi.
-Misol: document.getElementsByClassName("myClass") - "myClass" klassi bilan barcha elementlarni qaytaradi.
+   Misol: document.getElementsByClassName("myClass") - "myClass" klassi bilan barcha elementlarni qaytaradi.
 
 3. getElementsByTagName: Bu usul berilgan teg nomiga ega elementlar to‘plamini qaytaradi.
-Misol: document.getElementsByTagName("p") - sahifadagi barcha paragraflarni qaytaradi.
+   Misol: document.getElementsByTagName("p") - sahifadagi barcha paragraflarni qaytaradi.
 
 4. querySelector: Bu usul belgilangan CSS selektoriga mos keladigan birinchi elementni qaytaradi.
-Misol: document.querySelector("#myId") - "myId" identifikatoriga ega elementni qaytaradi.
+   Misol: document.querySelector("#myId") - "myId" identifikatoriga ega elementni qaytaradi.
 
 5. querySelectorAll: Bu usul belgilangan CSS selektoriga mos keladigan elementlar to'plamini qaytaradi.
-Misol: document.querySelectorAll(".myClass") - "myClass" klassi bilan barcha elementlarni qaytaradi.
+   Misol: document.querySelectorAll(".myClass") - "myClass" klassi bilan barcha elementlarni qaytaradi.
 
 Bular JavaScript-da DOM bilan ishlashda foydalanishingiz mumkin bo'lgan umumiy usullardan bir nechtasi. DOM usullari sizga elementlarni manipulyatsiya qilish, ularning atributlarini o'zgartirish, uslublarini o'zgartirish va sahifadagi boshqa amallarni bajarish imkonini beradi.
+
+
+/////////////////////Dom ///////////////////////////////
+
+
+
+HTML elementlarini topish
+Endi biz DOM hujjati nima ekanligini tushunganimizdan so'ng, biz birinchi HTML elementlarini olishni boshlashimiz mumkin. Javascript DOM yordamida buni amalga oshirishning turli usullari mavjud, bu erda eng keng tarqalganlari:
+
+Elementni ID bo'yicha oling
+GetElementById() usuli bitta elementni identifikatori bo'yicha olish uchun ishlatiladi. Keling, bir misolni ko'rib chiqaylik:
+
+var title= document.getElementById('header');
+
+Bu erda biz sarlavha identifikatoriga ega elementni olamiz va uni o'zgaruvchiga saqlaymiz.
+
+Elementlarni sinf nomi bilan oling
+Elementlar massivini qaytaradigan getElementsByClassName() usuli yordamida biz bir nechta ob'ektni ham olishimiz mumkin.
+
+var class=document.getElementByClassName('list');
+
+Bu erda biz ro'yxat sinfiga ega elementni olamiz va uni o'zgaruvchiga saqlaymiz.
+
+So'rovlar tanlagichi
+querySelector() usuli belgilangan CSS selektoriga mos keladigan birinchi elementni qaytaradi. Bu shuni anglatadiki, siz elementlarni id, sinf, teg va boshqa barcha joriy CSS selektorlari bo'yicha olishingiz mumkin. Bu erda men eng mashhur variantlardan bir nechtasini sanab o'taman.
+
+Id bo'yicha oling:
+
+var header= doucment.querySelector('#header');
+
+Sinf bo'yicha oling:
+
+var items = document.querySelector('.list');
+
+Teg bo'yicha oling:
+
+var headings= document.querySelector('h1');
+
+Queryselectorall
+querySelectorAll() usuli querySelector() bilan butunlay bir xil, faqat u CSS selektoriga mos keladigan barcha elementlarni qaytaradi.
+
+var headings= document.querySelectorAll('h1');
+
+Uslubni o'zgartirish
+HTML elementining uslubini o'zgartirish uchun elementlarimizning uslub xususiyatini o'zgartirishimiz kerak. Uslublarni o'zgartirish uchun sintaksisga misol:
+
+document.getElementById(id).style.property = yangi uslub
+Elementlarni qo'shish va o'chirish
+Endi biz yangi elementlarni qanday qo'shishimiz va mavjudlarini o'chirishimiz mumkinligini ko'rib chiqamiz.
+
+Elementlarni qo'shish
+var div = document.createElement('div');
+Elementlarni o'chirish
+var elem = document.querySelector('#header');
+elem.parentNode.removeChild(elem);
+Bu erda elementni olamiz va uni removeChild() usuli yordamida o'chirib tashlaymiz.
+
+Voqealar boshqaruvchilari
+HTML DOM, shuningdek, Javascriptga HTML hodisalariga munosabat bildirish imkonini beradi. Bu erda men eng muhimlaridan bir nechtasini sanab o'tdim:
+
+sichqonchani bosing
+sahifa yuklash
+sichqonchani harakatlantirish
+kirish maydonini o'zgartirish
+Voqealar tinglovchilarini tayinlash
+Endi keling, HTML elementlariga hodisa tinglovchilarini qanday belgilash mumkinligini ko'rib chiqamiz
+
+document.body.addEventListner("klik", funktsiya())
+
+Bu yerda biz ba'zi funksiyaga ega bo'lgan klik harakati yoki hodisa bo'yicha tanaga hodisa tinglovchisini qo'shamiz
